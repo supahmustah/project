@@ -1,6 +1,10 @@
+'use client';
+
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { WavyBackground } from '@/app/components/ui/wavy-background';
+import { useTheme } from 'next-themes';
 
 export default function Home() {
   return (
