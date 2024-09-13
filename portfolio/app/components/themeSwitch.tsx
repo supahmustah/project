@@ -42,7 +42,7 @@ const ThemeSwitch = () => {
   };
 
   return (
-    <label className='relative inline-block w-16 h-8'>
+    <label className='relative inline-block w-16 h-8 hover:cursor-pointer'>
       <input
         type='checkbox'
         className='hidden'

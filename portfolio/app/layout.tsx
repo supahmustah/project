@@ -20,6 +20,12 @@ const poppins = localFont({
   weight: '100 900',
 });
 
+const poppinsBold = localFont({
+  src: './fonts/Poppins-Bold.ttf',
+  variable: '--font-poppins-bold',
+  weight: '100 900',
+});
+
 export const metadata: Metadata = {
   title: 'Lode Van Beneden',
   description: 'Portfolio developed by Lode',
@@ -33,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased dark:text-white dark:bg-zinc-800`}>
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${poppinsBold.variable} antialiased dark:text-white dark:bg-zinc-800`}>
         <Nav />
         {children}
       </body>

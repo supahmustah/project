@@ -1,6 +1,7 @@
 'use client';
 import ThemeSwitch from './themeSwitch';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Nav() {
   const pathname = usePathname();
@@ -14,10 +15,10 @@ export default function Nav() {
   ];
 
   return (
-    <nav className='absolute  w-full text-lg font-[family-name:var(--font-poppins-reg)] py-5 flex gap-20 pr-20 justify-end'>
+    <nav className='absolute w-full text-lg font-[family-name:var(--font-poppins-reg)] py-5 flex gap-20 pr-20 justify-end border-b dark:border-zinc-900'>
       <div className='flex gap-20 relative'>
         {links.map((link) => (
-          <a
+          <Link
             key={link.name}
             href={link.href}
             className={`relative group hover:cursor-pointer`}>
@@ -27,7 +28,7 @@ export default function Nav() {
               ${
                 pathname === link.href ? 'w-full left-0' : 'w-0 left-1/2'
               }`}></span>
-          </a>
+          </Link>
         ))}
       </div>
       <ThemeSwitch />
