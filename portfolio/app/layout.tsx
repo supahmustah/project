@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${poppinsBold.variable} antialiased dark:text-white dark:bg-zinc-800`}>
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${poppinsBold.variable} antialiased dark:text-white dark:bg-neutral-800`}>
         <Nav />
         {children}
       </body>

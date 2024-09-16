@@ -12,5 +12,5 @@
           honing my skills with personal projects, including my own portfolio.*/
 
 export default function About() {
-  return <div>d</div>;
+  return <div></div>;
 }
